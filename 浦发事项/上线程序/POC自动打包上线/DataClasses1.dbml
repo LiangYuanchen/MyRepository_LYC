@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="SPDAct" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=192.168.0.9;Initial Catalog=SPDAct;User ID=sa;Max Pool Size=512;Connect Timeout=30" SettingsObjectName="POC自动打包上线.Properties.Settings" SettingsPropertyName="SPDActConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Act" Member="Act">
+    <Type Name="Act">
+      <Column Name="ActID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Act_Level" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Act_Order" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="Effect" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Enb_Date" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="Pub_Date" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="Sta_Date" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="End_Date" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="Province" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="Act_Name" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Upload_date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="operator" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="op_date" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Content" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="IsOnline" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="GID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="fileNumber" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="Check_Name" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="IsError" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="Source" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Column Name="SourceCN" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="EditState" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FromType" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Act_Items" Member="Act_Items">
+    <Type Name="Act_Items">
+      <Column Name="ItemID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ActID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Item_Name" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Item_Type" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="orders" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Content" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Item_ParentID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Function Name="dbo.UPload_Data" Method="UPload_Data">
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.UPload_Data_Friday" Method="UPload_Data_Friday">
+    <Parameter Name="datetime" Type="System.DateTime" DbType="SmallDateTime" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.UPload_Data_Friday2" Method="UPload_Data_Friday2">
+    <Parameter Name="datetime" Type="System.DateTime" DbType="SmallDateTime" />
+    <Return Type="System.Int32" />
+  </Function>
+</Database>

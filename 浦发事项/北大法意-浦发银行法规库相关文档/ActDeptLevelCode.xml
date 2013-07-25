@@ -1,0 +1,10 @@
+<root>
+	<depts>
+		<dept>
+			<deptid><![CDATA[ID标识]]></deptid>
+			<classid><![CDATA[层级编号]]></classid>
+			<layer><![CDATA[层级ID]]></layer>
+			<deptname><![CDATA[颁布机构名称]]></deptname>
+		</dept>
+	</depts>
+</root>

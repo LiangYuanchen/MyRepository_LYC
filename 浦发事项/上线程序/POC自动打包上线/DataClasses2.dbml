@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="SPDAct" Class="DataClasses2DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=192.168.0.191;Initial Catalog=SPDAct;User ID=sa" SettingsObjectName="POC自动打包上线.Properties.Settings" SettingsPropertyName="SPDActConnectionString1" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Act" Member="ActPic">
+    <Type Name="ActPic">
+      <Column Name="ActID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ActName" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="FileNumber" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Pub_Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Sta_Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Depts" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="State" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="OpDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Effect" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="XmlContent" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="PictureState" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="operator" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="Source" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

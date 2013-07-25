@@ -1,0 +1,48 @@
+<root>
+	<act actid="ActID">
+		<actname><![CDATA[法规名称]]></actname>
+		<fileNumber><![CDATA[法规文号]]></fileNumber>
+		<pubdate>颁布时间</pubdate>
+		<stadate>实施时间</stadate>
+		<enddate>失效时间</enddate>
+		<depts><![CDATA[颁布机构，多个机构用";"分割]]></depts>
+		<deptids><![CDATA[颁布机构，多个机构用";"分割]]></deptids>
+		<state>数据状态：0默认，1已删除(此处与数据库码表一致)</state>
+		<opdate>最后更新时间</opdate>
+		<effect>效力属性：1、失效，2、有效，3、修正，4、颁布待生效，9、未知(此处与数据库码表一致)</effect>
+		<content>显示全文</content>
+		<actitems>
+			<item itemid="[ItemID]">
+				<actid>所属法规ID</actid>
+				<itemname><![CDATA[法条编号]]></itemname>	
+				<itemtype>法条类型:0、未知，1、序，2、附，3、章，4、条，5、目录,6、节；(此处与数据库码表一致)</itemtype>
+				<itemparentid>法条父级ID</itemparentid>
+				<orders>法条排序</orders>
+				<content><![CDATA[法条正文]]></content>
+			</item>
+		</actitems>
+		<actcorrelations>
+			<actcorrelation>
+				<toactid>法规ID</toactid>
+				<toitemid>条目ID </toitemid>
+				<fromactid>关联法规的ActID</fromactid>
+				<fromactname><![CDATA[关联法规的标题]]></fromactname>
+				<fromitemcontent><![CDATA[关联法规的条目内容]]></fromitemcontent>
+				<fromitemname><![CDATA[法条条目名称]]></fromitemname>
+			</actcorrelation>	
+		</actcorrelations>
+		<actclausenotes>
+		     <actclausenote>
+				<toactname><![CDATA[被注释法规名称]]></toactname>
+				<toactid>被注释法规ID</toactid>
+				<toitemid>被注释法条ID</toitemid>
+				<fromactname><![CDATA[注释法规名称]]></fromactname>
+				<fromactid>注释法规ID</fromactid>
+				<content><![CDATA[注释内容]]></content>
+				<summary><![CDATA[注释描述]]></summary>
+				<source><![CDATA[注释依据]]></source>
+				<fromitemname><![CDATA[法条条目名称]]></fromitemname>
+			</actclausenote>	
+		</actclausenotes>
+	</act>
+</root>

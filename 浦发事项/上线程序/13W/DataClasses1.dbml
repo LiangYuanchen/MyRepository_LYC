@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="SPDAct" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=192.168.0.191;Initial Catalog=SPDAct;User ID=sa" SettingsObjectName="_13W.Properties.Settings" SettingsPropertyName="SPDActConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Act_Correlation" Member="Act_Correlation">
+    <Type Name="Act_Correlation">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ToActID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ToItemID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FromActID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FromItemID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FromActName" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="FromItemContent" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="FromItemName" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Act" Member="Act">
+    <Type Name="Act">
+      <Column Name="ActID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ActName" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="FileNumber" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="Pub_Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Sta_Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Depts" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Content" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="State" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="OpDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Effect" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Act_Items" Member="Act_Items">
+    <Type Name="Act_Items">
+      <Column Name="ItemID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ActID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Item_Name" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="Item_Type" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Item_ParentID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Orders" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Content" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ActClauseNote" Member="ActClauseNote">
+    <Type Name="ActClauseNote">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ToActName" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="ToActID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ToItemID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FromActName" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="FromActID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FromItemID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Content" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Summary" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="source" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="FromItemName" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

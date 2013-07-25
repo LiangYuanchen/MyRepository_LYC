@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="MIS" Class="DataClasses2DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=192.168.0.9;Initial Catalog=MIS;User ID=sa" SettingsObjectName="_13W数据关联颁布机构.Properties.Settings" SettingsPropertyName="MISConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Act_Dept" Member="Act_Dept">
+    <Type Name="Act_Dept">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="DeptID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ActID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Type" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Dept" Member="Dept">
+    <Type Name="Dept">
+      <Column Name="DeptID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="rowId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="IsOnline" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="Dept_Code" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Dept_Type" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
+      <Column Name="Dept_Name" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Abbreviation" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="Dept_Trans" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="Dept_Alias" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="TDeptID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="OpDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="syn_date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Function Name="dbo.fn_SolrJoinActDeptID" Method="fn_SolrJoinActDeptID" IsComposable="true">
+    <Parameter Name="ActID" Parameter="actID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="char" Type="System.String" DbType="VarChar(1)" />
+    <Return Type="System.String" />
+  </Function>
+</Database>

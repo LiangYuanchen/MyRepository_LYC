@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "POC自动打包上线", "POC自动打包上线\POC自动打包上线.csproj", "{8F710410-FFB1-4817-BFAB-D360A456BA75}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "POC13W数据跑取", "POC13W数据跑取\POC13W数据跑取.csproj", "{35CE3916-FFB2-44E2-89CE-74ACDADC9591}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "13W数据添加Content", "13W数据添加Content\13W数据添加Content.csproj", "{8A83BE9E-2257-487E-933A-7E53478EE763}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "13W数据导出为txt", "13W\13W数据导出为txt.csproj", "{041F26BE-7293-4D9E-A579-EBEA24225E71}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeptToAct", "DeptToAct\DeptToAct.csproj", "{A1A6113C-6589-4AB2-AAA6-32E1BDC30414}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "13W数据关联颁布机构", "13W数据关联颁布机构\13W数据关联颁布机构.csproj", "{7827B5FF-46F3-4E64-BF53-34485735DB04}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8F710410-FFB1-4817-BFAB-D360A456BA75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F710410-FFB1-4817-BFAB-D360A456BA75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F710410-FFB1-4817-BFAB-D360A456BA75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F710410-FFB1-4817-BFAB-D360A456BA75}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35CE3916-FFB2-44E2-89CE-74ACDADC9591}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35CE3916-FFB2-44E2-89CE-74ACDADC9591}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35CE3916-FFB2-44E2-89CE-74ACDADC9591}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35CE3916-FFB2-44E2-89CE-74ACDADC9591}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A83BE9E-2257-487E-933A-7E53478EE763}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A83BE9E-2257-487E-933A-7E53478EE763}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A83BE9E-2257-487E-933A-7E53478EE763}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A83BE9E-2257-487E-933A-7E53478EE763}.Release|Any CPU.Build.0 = Release|Any CPU
+		{041F26BE-7293-4D9E-A579-EBEA24225E71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{041F26BE-7293-4D9E-A579-EBEA24225E71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{041F26BE-7293-4D9E-A579-EBEA24225E71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{041F26BE-7293-4D9E-A579-EBEA24225E71}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1A6113C-6589-4AB2-AAA6-32E1BDC30414}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1A6113C-6589-4AB2-AAA6-32E1BDC30414}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1A6113C-6589-4AB2-AAA6-32E1BDC30414}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1A6113C-6589-4AB2-AAA6-32E1BDC30414}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7827B5FF-46F3-4E64-BF53-34485735DB04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7827B5FF-46F3-4E64-BF53-34485735DB04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7827B5FF-46F3-4E64-BF53-34485735DB04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7827B5FF-46F3-4E64-BF53-34485735DB04}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
